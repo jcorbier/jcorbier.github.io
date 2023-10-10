@@ -13,6 +13,8 @@ permissions:
 
 jobs:
   build:
+    env:
+      PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.PUBLIC_GOOGLE_SITE_VERIFICATION }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository with git
